@@ -4,7 +4,7 @@ import { forwardRef, InputHTMLAttributes } from "react";
 export type InputProps = InputHTMLAttributes<HTMLInputElement>;
 
 const Input = forwardRef<HTMLInputElement, InputProps>(
-  ({ className, type, ...props }, ref) => {
+  ({ className, type = "text", ...props }, ref) => {
     return (
       <input
         className={cn(
