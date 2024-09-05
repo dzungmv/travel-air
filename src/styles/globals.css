@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #3B71FE;
+  --orange: #FA8F54;
+  --yellow: #FFD166;
+  --blue: #7ED4CF;
+
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+  }
+} */
