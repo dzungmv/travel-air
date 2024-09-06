@@ -5,7 +5,7 @@ import { fly, hero } from "../../../public";
 export default function HomeHero() {
   return (
     <section className="lg:mt-[80px] mt-10 px-4 flex relative">
-      <section className="lg:ml-[140px] md:ml-[64px]">
+      <section className="lg:ml-[140px] md:ml-[64px] w-full lg:w-auto">
         <h1 className="lg:text-[64px] lg:leading-[84px] text-4xl md:text-5xl font-bold relative">
           Travel Planning <br /> Made{" "}
           <span className="text-yellow relative">
