@@ -1,3 +1,9 @@
+import HomeHero from "@/_features/home/hero";
+
 export default function Home() {
-  return <p>HEH</p>;
+  return (
+    <>
+      <HomeHero />
+    </>
+  );
 }

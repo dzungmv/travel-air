@@ -4,3 +4,5 @@ export { default as face } from "./icons/face.svg";
 export { default as eyeOn } from "./icons/eye-on.svg";
 export { default as eyeOff } from "./icons/eye-off.svg";
 export { default as logo } from "./logo.svg";
+export { default as hero } from "./home/hero.png";
+export { default as fly } from "./home/fly.svg";

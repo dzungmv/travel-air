@@ -11,6 +11,9 @@ const config: Config = {
         blue: "var(--blue)",
         primaryPastel: "var(--primary-pastel)",
       },
+      maxWidth: {
+        main: "1320px",
+      },
       keyframes: {
         "caret-blink": {
           "0%,70%,100%": { opacity: "1" },
@@ -19,6 +22,9 @@ const config: Config = {
       },
       animation: {
         "caret-blink": "caret-blink 1.25s ease-out infinite",
+      },
+      screens: {
+        lg: "1024.8px",
       },
     },
   },
