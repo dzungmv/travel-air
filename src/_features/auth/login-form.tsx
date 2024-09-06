@@ -16,10 +16,14 @@ import Input from "@/components/ui/input";
 import InputPassword from "@/components/ui/input-password";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
+import { toast } from "sonner";
 
 type Inputs = z.infer<typeof loginSchema>;
 
 export default function LoginForm() {
+  const router = useRouter();
+
   const form = useForm<Inputs>({
     resolver: zodResolver(loginSchema),
     defaultValues: {
@@ -30,6 +34,8 @@ export default function LoginForm() {
 
   const onSubmit = (values: Inputs) => {
     console.log("Sign in", values);
+    toast.success("Login successfully!");
+    router.replace("/");
   };
 
   return (

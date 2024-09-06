@@ -14,12 +14,16 @@ import InputPassword from "@/components/ui/input-password";
 import { signUpSchema } from "@/tools/validations/auth";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
+import { toast } from "sonner";
 import { z } from "zod";
 
 type Inputs = z.infer<typeof signUpSchema>;
 
 export default function SignupForm() {
+  const router = useRouter();
+
   const form = useForm<Inputs>({
     resolver: zodResolver(signUpSchema),
     defaultValues: {
@@ -35,10 +39,10 @@ export default function SignupForm() {
   const watchChecked = form.watch("checked");
 
   const onSubmit = (values: Inputs) => {
-    console.log("Sign in", values);
+    console.log("Sign up", values);
+    toast.success("Sign up successfully!");
+    router.replace("/");
   };
-
-  console.log("form error: ", form.formState.errors);
 
   return (
     <Form {...form}>

@@ -13,7 +13,7 @@ type IProps = {
 
 export default function AuthPage({ type }: IProps) {
   return (
-    <section className="grid place-items-center py-10">
+    <section className="grid place-items-center py-10 min-h-screen">
       <section className="w-full md:max-w-[456px] px-4 md:px-[40px] md:py-[48px] lg:border border-gray-100 md:shadow-md md:rounded-lg">
         {type === "login" ? (
           <div className="flex items-center gap-2 justify-center">
