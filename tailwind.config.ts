@@ -9,6 +9,7 @@ const config: Config = {
         orange: "var(--orange)",
         yellow: "var(--yellow)",
         blue: "var(--blue)",
+        primaryPastel: "var(--primary-pastel)",
       },
     },
   },

@@ -13,6 +13,7 @@ import Input from "@/components/ui/input";
 import InputPassword from "@/components/ui/input-password";
 import { signUpSchema } from "@/tools/validations/auth";
 import { zodResolver } from "@hookform/resolvers/zod";
+import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
@@ -31,9 +32,13 @@ export default function SignupForm() {
     },
   });
 
+  const watchChecked = form.watch("checked");
+
   const onSubmit = (values: Inputs) => {
     console.log("Sign in", values);
   };
+
+  console.log("form error: ", form.formState.errors);
 
   return (
     <Form {...form}>
@@ -113,7 +118,7 @@ export default function SignupForm() {
         />
 
         <section className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
+          <div className="flex items-start gap-2">
             <FormField
               control={form.control}
               name="checked"
@@ -127,17 +132,21 @@ export default function SignupForm() {
                       onChange={field.onChange}
                     />
                   </FormControl>
-
-                  <FormMessage />
                 </FormItem>
               )}
             />
 
-            <p className="text-sm text-gray-500">Remember me</p>
+            <p className="text-sm text-gray-600 -mt-1">
+              By clicking sign up , you agree to our{" "}
+              <Link href="">Term of Service</Link> and{" "}
+              <Link href="">Privacy Policy</Link>
+            </p>
           </div>
         </section>
 
-        <Button className="!mt-7">Sign in</Button>
+        <Button disabled={!watchChecked} className="!mt-7">
+          Sign in
+        </Button>
       </form>
     </Form>
   );
