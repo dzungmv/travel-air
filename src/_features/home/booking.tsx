@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function HomeBooking() {
   return (
-    <section className="max-w-[1170px] mx-auto py-[70px] flex lg:flex-row flex-col px-4 items-center gap-7 lg:gap-[100px]">
+    <section className="max-w-secondary mx-auto py-[70px] flex lg:flex-row flex-col px-4 items-center gap-7 lg:gap-[100px]">
       <section className="bg-[#FEE2B6] rounded-2xl py-4 lg:py-[40px] px-5 lg:px-[70px] max-w-[500px] w-full">
         <div className="bg-[#3B71FE] rounded-xl">
           <div className="px-4 lg:px-9 py-5 lg:py-7 pb-2">

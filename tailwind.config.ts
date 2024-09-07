@@ -13,6 +13,7 @@ const config: Config = {
       },
       maxWidth: {
         main: "1320px",
+        secondary: "1170px",
       },
       keyframes: {
         "caret-blink": {
