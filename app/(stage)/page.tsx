@@ -5,6 +5,7 @@ import HomeEasyBooking from "@/_features/home/easy-trip";
 import HomeHero from "@/_features/home/hero";
 import HomeInnovate from "@/_features/home/innovate";
 import HomeSponsor from "@/_features/home/sponsor";
+import HomeTripPlan from "@/_features/home/trip-plan";
 import HomeWorks from "@/_features/home/works";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <HomeWorks />
       <HomeAirTrav />
       <HomeDiscover />
+      <HomeTripPlan />
     </>
   );
 }
