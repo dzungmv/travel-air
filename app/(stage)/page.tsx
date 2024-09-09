@@ -3,6 +3,7 @@ import HomeEasyBooking from "@/_features/home/easy-trip";
 import HomeHero from "@/_features/home/hero";
 import HomeInnovate from "@/_features/home/innovate";
 import HomeSponsor from "@/_features/home/sponsor";
+import HomeWorks from "@/_features/home/works";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <HomeInnovate />
       <HomeBooking />
       <HomeEasyBooking />
+      <HomeWorks />
     </>
   );
 }

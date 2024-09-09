@@ -1,9 +1,7 @@
-import { cn } from "@/tools/lib/utils";
-import { ImageProps } from "next/image";
-import { default as Photo } from "next/image";
+import { ImageProps, default as Photo } from "next/image";
 
 type IProps = ImageProps & {
-  size?: number;
+  size?: number | string;
 };
 
 export default function Image({
