@@ -1,3 +1,4 @@
+import HomeAirTrav from "@/_features/home/air-trav";
 import HomeBooking from "@/_features/home/booking";
 import HomeEasyBooking from "@/_features/home/easy-trip";
 import HomeHero from "@/_features/home/hero";
@@ -14,6 +15,7 @@ export default function Home() {
       <HomeBooking />
       <HomeEasyBooking />
       <HomeWorks />
+      <HomeAirTrav />
     </>
   );
 }

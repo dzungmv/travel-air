@@ -106,7 +106,7 @@ export default function HomeWorks() {
       </section>
 
       <section className="max-w-[433px]">
-        <h2 className="text-[40px] leading-[60px] font-semibold">
+        <h2 className="lg:text-[40px] text-4xl lg:leading-[60px] font-semibold">
           How does it works
         </h2>
 

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, ArrowRight, Check, CheckCircle, Plane } from "lucide-react";
+import { ArrowLeft, ArrowRight, CheckCircle, Plane } from "lucide-react";
 import Image from "next/image";
 
 export default function HomeBooking() {
